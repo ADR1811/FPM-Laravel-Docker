@@ -9,4 +9,7 @@ stop:
 pint:
 	./vendor/bin/pint
 
-.PHONY: start stop pint
+exec:
+	docker exec -it laravel bash
+
+.PHONY: start stop pint exec
